@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\node (cs) at (0,1) {\textcolor{blue}{Code source} };
+\node[draw, fill=blue!20!white] (int) at (4,-1) {Interpréteur};
+\node (entree) at (4,0) {\textbf{Entrée(s)}};
+\node (sortie) at (4,-2) {\textbf{Sortie}};
+
+
+\draw[-latex,-](cs) -- (0,-1);
+\draw[-latex] (0,-1) --(int);
+\draw[-latex] (entree) -- (se);
+\draw[-latex] (se) -- (sortie);
+
+\end{tikzpicture}  

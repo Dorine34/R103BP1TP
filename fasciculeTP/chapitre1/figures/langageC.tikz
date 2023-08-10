@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\node (cs) at (0,1) {\textcolor{blue}{Code source}};
+\node[draw, fill=blue!20!white] (comp) at (0,0) {Compilateur};
+\node (cb) at (0,-1) {Code binaire};
+\node[draw, fill=blue!20!white] (se) at (4,-1) {Système d'exploitation};
+\node (entree) at (4,0) {\textbf{Entrée(s)}};
+\node (sortie) at (4,-2) {\textbf{Sortie}};
+
+
+\draw[-latex] (cs) -- (comp) ;
+\draw[-latex] (comp) -- (cb);
+\draw[-latex] (cb) -- (se);
+\draw[-latex] (entree) -- (se);
+\draw[-latex] (se) -- (sortie);
+
+\end{tikzpicture}  
